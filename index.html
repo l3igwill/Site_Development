@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="author" content="William Windsor">
+	    <meta name="description" content="Site Welcome page">
+	    <meta name="keywords" content="resume,about me,links">
+	    
+	    <link rel="stylesheet" href="Css/welcomepage.css" type="text/css" />
+	    <style type="text/css">
+	       
+	        h1{
+	            margin:5px;
+	        }
+	        img{
+	            border-radius:40px;
+	        }
+	        td{
+	            vertical-align:top;
+	        }
+	  
+	    </style>
+	    
+	    <script
+            src="http://code.jquery.com/jquery-3.1.1.js"
+            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+            crossorigin="anonymous"></script>
+        <script src="Javascript/javascript.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/additional-methods.min.js"></script>
+        
+	    
+	<title>William Windsor</title>
+    </head>
+    
+    <body class=mainbody>
+        <ul id=fixed class=horizontal>
+            <li><a class=active>Home</a></li>
+            <li><a href="Webpages/workSchool.html">Work &amp; School</a></li>
+            <li><a href="Webpages/interest.html">My Interest</a></li>
+            <li id="contactMe" style="float:right"><a>Contact Me</a></li>
+        </ul>
+        
+        
+        <h1 style="Margin-top:40px;text-align:center;">William Windsor</h1>
+        <div style="text-align:center;" class=container>
+            <img src="Images/williammainpage.JPG" height="644" width="483" alt="will main page"/>
+        </div>
+        
+        <div class=container>
+            <h2 id=centerIntro>Introduction</h2>
+            <p style="padding:20px;">Well I am guessing that you are here to learn a little about William's life adventure thus far. Well lets get down to it.
+                <br>
+                <br>
+                William was born March 13th, 1994 in the Town of Orange Park, Florida. His early life as he can recall was wrestling with is sister and rough housing outside. That was until he attented his first school <a href="http://sbj.oneclay.net/" style="color:white">S. Bryan Jennings Elementary</a>. On his first day of school his new teacher pryed him from his mother to introduce him to the new world of education.
+                <img src="Images/devandwill.jpg" style="float:right;width:300px;margin-top:10px;"/>
+                <br>
+                <br>
+                William attended for only a kindergarden before his faimly moved to Wisconsin Rapids, WI. Thus began his journey to where he is today. In this new town he found is life long friend Devin Moore and his love for technology.
+                <br>
+                <br>
+                <br>
+                As he continued down the path of life he took interest in software and hardware. In the year 2013 he built his first person custom gaming computer. This only ignited his passion. On his own he taught himself as much about different programming languages, but to continute he needed higher education.
+                <br>
+                <br>
+                So in January, 2015 William began his journey to become  a software developer registering at Mid-State Technical College where he currently is in his second year.
+                <br>
+                <br>
+                William is expected to graduate Fall 2017.
+            </p>
+            
+        </div>
+        
+        <div id=formContainer>
+            <form id="contact" action="mailto:15528148@mstc.edu?subject=Website&Visit?Body=Hello&William" enctype="text/plain" method="POST">
+                <div class="containerForm">
+                    <div class="head">
+                        <h2>Contact me</h2>
+                    </div>
+                    <input type="text" name="name" id="txtName" placeholder="Full Name" autocomplete=off/><br />
+                    <input type="text" name="company" id="company" placeholder="Company" autocomplete="off"/><br/>
+                    <input  type="email" name="email" id="txtEmail" placeholder="Email" autocomplete=off /><br />
+                    <input type="phone" name="phone" id="txtPhone" placeholder="Phone" autocomplete=off/><br/>
+                    <textarea type="text" name="message" placeholder="Message" autocomplete=off></textarea><br />
+                    <div class="message" style="display:none">Message Sent</div>
+                    <button id="submit" type="submit">Send</button>
+                </div>
+            </form>
+            
+        </div>
+        
+    </body>
+    
+    
+</html>
